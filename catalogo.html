@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cursos - TecnoCapacita Cursos</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-title">TecnoCapacita <span>Cursos</span></div>
+                <div class="logo-subtitle">Inovação em Aprendizagem</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contato.html" class="btn-header btn-fale">Fale Conosco</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner do Catálogo com Grafismos e Busca Flutuante -->
+    <section class="catalogo-hero">
+        <!-- Grafismos Geométricos Sutis no Fundo -->
+        <div class="catalogo-grafismos" aria-hidden="true">
+            <span class="geo-shape geo-circle-1"></span>
+            <span class="geo-shape geo-circle-2"></span>
+            <span class="geo-shape geo-diamond"></span>
+            <span class="geo-shape geo-grid"></span>
+        </div>
+
+        <div class="container catalogo-hero-content">
+            <h2 class="catalogo-title">Catálogo de Cursos Profissionalizantes</h2>
+            <p class="catalogo-subtitulo">Escolha o curso desejado para conferir os módulos e informações completas de matrícula.</p>
+        </div>
+
+        <!-- Interface de Busca e Filtros Flutuante na Divisa do Banner -->
+        <div class="catalogo-busca-wrapper">
+            <div class="catalogo-busca-bar" role="search" aria-label="Busca e filtro de cursos">
+                <!-- Campo de Pesquisa com Ícone de Lupa -->
+                <div class="busca-input-group">
+                    <svg class="icon-lupa" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="search" id="input-busca-curso" placeholder="Pesquisar curso pelo nome ou área..." autocomplete="off">
+                </div>
+
+                <!-- Grupo Horizontal de Botões de Filtro -->
+                <div class="filtro-botoes" role="group" aria-label="Filtrar por categoria">
+                    <button type="button" class="btn-filtro ativo" data-categoria="todos">Todos</button>
+                    <button type="button" class="btn-filtro" data-categoria="tecnologia">Tecnologia</button>
+                    <button type="button" class="btn-filtro" data-categoria="administracao">Administração</button>
+                    <button type="button" class="btn-filtro" data-categoria="saude">Saúde</button>
+                    <button type="button" class="btn-filtro" data-categoria="kids">Kids</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Cursos -->
+    <section id="cursos" class="container">
+        
+        <div class="cursos-grid">
+            
+            <!-- 1. Informática Básica e Avançada -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Curso de Informática Básica e Avançada" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Informática Básica e Avançada</h3>
+                    <p class="card-descricao">Domine desde os fundamentos do sistema operacional até planilhas avançadas, documentos profissionais e banco de dados.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            09 ou 13 meses • 109 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Inform%C3%A1tica%20B%C3%A1sica%20e%20Avan%C3%A7ada" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 2. Informática Básica -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Curso de Informática Básica" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Informática Básica</h3>
+                    <p class="card-descricao">Aprenda do zero a utilizar o computador, navegar na internet com segurança e criar textos, planilhas e apresentações essenciais.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 64 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Inform%C3%A1tica%20B%C3%A1sica" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 3. Informática Kids -->
+            <article class="curso-card" data-categoria="kids">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Curso de Informática Kids" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Kids</span>
+                    <h3>Informática Kids</h3>
+                    <p class="card-descricao">Introdução lúdica e interativa ao mundo digital para crianças, desenvolvendo raciocínio lógico e criatividade no computador.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            09 meses • 70 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Inform%C3%A1tica%20Kids" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 4. Web Designer -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&q=80" alt="Curso de Web Designer" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Web Designer</h3>
+                    <p class="card-descricao">Projete e desenvolva páginas web modernas, animações e interfaces atraentes utilizando Photoshop, Flash, Fireworks, Dreamweaver e HTML.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            10 ou 15 meses • 118 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Web%20Designer" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 5. Designer Gráfico -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="Curso de Designer Gráfico" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Designer Gráfico</h3>
+                    <p class="card-descricao">Crie identidades visuais, artes para mídias sociais e materiais impressos profissionais com CorelDRAW, Illustrator, Photoshop e InDesign.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 ou 11 meses • 93 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Designer%20Gr%C3%A1fico" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 6. Criação de Games -->
+            <article class="curso-card" data-categoria="kids">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80" alt="Curso de Criação de Games" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia & Games</span>
+                    <h3>Criação de Games</h3>
+                    <p class="card-descricao">Aprenda criação de games, lógica de programação com Java e banco de dados SQL para dar vida aos seus próprios jogos.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 62 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Cria%C3%A7%C3%A3o%20de%20Games" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 7. Montagem e Manutenção de Computadores -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=600&q=80" alt="Curso de Montagem e Manutenção de Computadores" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Montagem e Manutenção de Computadores</h3>
+                    <p class="card-descricao">Capacite-se no diagnóstico de hardware, montagem de PCs, configuração de placas, instalação de S.O., Windows 11 e redes locais.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            05 ou 08 meses • 66 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Montagem%20e%20Manuten%C3%A7%C3%A3o%20de%20Computadores" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 8. Linguagem e Programação de Computadores (Iniciante ao Avançado) -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Curso de Linguagem e Programação de Computadores" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Linguagem e Programação de Computadores</h3>
+                    <p class="card-descricao">Formação do iniciante ao avançado: Lógica de Programação, Java, Visual Basic (Mód. I, II e III), Delphi (Mód. I e II) e Banco de Dados SQL.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 a 16 meses • 94h a 224h
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Linguagem%20e%20Programa%C3%A7%C3%A3o%20de%20Computadores" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 10. AutoCAD -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Curso de AutoCAD" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>AutoCAD</h3>
+                    <p class="card-descricao">Elabore plantas baixas, desenhos técnicos em AutoCAD 2D e modelagens em AutoCAD 3D voltadas para engenharia e arquitetura.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 65 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=AutoCAD" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 11. Logística Empresarial -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Curso de Logística Empresarial" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Logística Empresarial</h3>
+                    <p class="card-descricao">Domine operações de logística, matemática financeira, Excel avançado e criação de empresas para atuar no setor corporativo.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 68 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Log%C3%ADstica%20Empresarial" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 12. Telemarketing -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=600&q=80" alt="Curso de Telemarketing" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Telemarketing</h3>
+                    <p class="card-descricao">Desenvolva técnicas de vendas, telemarketing, atendimento ao cliente e noções de informática para o mercado comercial.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 67 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Telemarketing" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 13. Operador de Caixa -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Curso de Operador de Caixa" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Operador de Caixa</h3>
+                    <p class="card-descricao">Aprenda profissões de supermercado, atendimento ao cliente e rotinas completas de operador de caixa com prática profissional.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            07 meses • 58 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Operador%20de%20Caixa" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 14. Atendente de Ótica -->
+            <article class="curso-card" data-categoria="saude">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=600&q=80" alt="Curso de Atendente de Ótica" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Saúde</span>
+                    <h3>Atendente de Ótica</h3>
+                    <p class="card-descricao">Capacite-se em telemarketing, atendimento ao cliente e conhecimentos específicos de atendente de ótica e consultoria visual.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            06 meses • 53 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Atendente%20de%20%C3%93tica" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 15. Auxiliar de Consultório Odontológico -->
+            <article class="curso-card" data-categoria="saude">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Curso de Auxiliar de Consultório Odontológico" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Saúde</span>
+                    <h3>Auxiliar de Consultório Odontológico</h3>
+                    <p class="card-descricao">Prepare-se para atuar como auxiliar odontológico, dominando também atendimento ao cliente, recepção, telemarketing e caixa.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            07 ou 10 meses • 84 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Auxiliar%20de%20Consult%C3%B3rio%20Odontol%C3%B3gico" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 16. Auxiliar de Farmácia -->
+            <article class="curso-card" data-categoria="saude">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80" alt="Curso de Auxiliar de Farmácia" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Saúde</span>
+                    <h3>Auxiliar de Farmácia</h3>
+                    <p class="card-descricao">Formação completa em rotinas de auxiliar de farmácia, atendimento humanizado ao cliente e operação de caixa em drogarias.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 64 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Auxiliar%20de%20Farm%C3%A1cia" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 17. Empreendedorismo -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Curso de Empreendedorismo" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Empreendedorismo</h3>
+                    <p class="card-descricao">Aprenda criação de empresas, design com CorelDRAW, atendimento ao cliente e técnicas de vendas para abrir ou expandir seu negócio.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 ou 11 meses • 92 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Empreendedorismo" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 18. Recepção Hoteleira -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Curso de Recepção Hoteleira" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Recepção Hoteleira</h3>
+                    <p class="card-descricao">Domine hotelaria, atendimento ao cliente, telemarketing, operador de caixa, Excel e informática para hotéis, pousadas e resorts.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            07 ou 11 meses • 89 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Recep%C3%A7%C3%A3o%20Hoteleira" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 19. Cuidador de Idosos -->
+            <article class="curso-card" data-categoria="saude">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80" alt="Curso de Cuidador de Idosos" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Saúde</span>
+                    <h3>Cuidador de Idosos</h3>
+                    <p class="card-descricao">Aprenda atendimento humanizado, rotinas de cuidador de idosos e noções de medicamentos injetáveis para o bem-estar da terceira idade.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            05 meses • 59 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Cuidador%20de%20Idosos" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 20. Auxiliar Veterinário -->
+            <article class="curso-card" data-categoria="saude">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=600&q=80" alt="Curso de Auxiliar Veterinário" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Saúde</span>
+                    <h3>Auxiliar Veterinário</h3>
+                    <p class="card-descricao">Capacite-se com os Módulos I e II de Auxiliar Veterinário, atendimento ao cliente e operação de caixa para clínicas e pet shops.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            07 ou 10 meses • 80 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Auxiliar%20Veterin%C3%A1rio" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 21. Rotinas Administrativas -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Curso de Rotinas Administrativas" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Rotinas Administrativas</h3>
+                    <p class="card-descricao">Domine Excel avançado, contabilidade, matemática financeira, departamento pessoal, secretariado e gestão de pessoas (RH).</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            11 ou 16 meses • 132 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Rotinas%20Administrativas" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 22. Gestão Empresarial -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Curso de Gestão Empresarial" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Gestão Empresarial</h3>
+                    <p class="card-descricao">Desenvolva visão estratégica em departamento pessoal, criação de empresas, matemática financeira e logística empresarial.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 68 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Gest%C3%A3o%20Empresarial" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 23. Gestão do Agronegócio -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80" alt="Curso de Gestão do Agronegócio" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Administração</span>
+                    <h3>Gestão do Agronegócio</h3>
+                    <p class="card-descricao">Capacitação administrativa completa com Excel essencial e avançado, contabilidade, matemática financeira, DP, secretariado e meio ambiente.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            10 ou 15 meses • 122 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Gest%C3%A3o%20do%20Agroneg%C3%B3cio" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 24. Produção de Vídeos -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80" alt="Curso de Produção de Vídeos" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Produção de Vídeos</h3>
+                    <p class="card-descricao">Produção de vídeos para internet: módulo Youtubers, edição profissional no Adobe Premiere, Photoshop e Illustrator.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            09 meses • 73 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Produ%C3%A7%C3%A3o%20de%20V%C3%ADdeos" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 25. Gestão de TI -->
+            <article class="curso-card" data-categoria="tecnologia">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Curso de Gestão de TI" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Tecnologia</span>
+                    <h3>Gestão de TI</h3>
+                    <p class="card-descricao">Gerencie infraestrutura tecnológica, segurança da informação, suporte técnico e projetos de tecnologia em ambientes corporativos.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            08 meses • 68 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Gest%C3%A3o%20de%20TI" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 26. Inglês Interativo -->
+            <article class="curso-card" data-categoria="administracao">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Curso de Inglês Interativo" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Idiomas</span>
+                    <h3>Inglês Interativo</h3>
+                    <p class="card-descricao">Aprenda conversação, compreensão auditiva, leitura e escrita em inglês nos Módulos I a IV voltados para o mercado e viagens.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            12 ou 17 meses • 140 horas
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Ingl%C3%AAs%20Interativo" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 27. Medicamentos Injetáveis -->
+            <article class="curso-card" data-categoria="saude">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Curso de Medicamentos Injetáveis" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Saúde</span>
+                    <h3>Medicamentos Injetáveis</h3>
+                    <p class="card-descricao">Domine as técnicas de preparo e aplicação de injetáveis com segurança e confiança com a Enfermeira Fernanda Neves. Aulas 100% práticas e material incluso.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Duração: 2 meses
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=Medicamentos%20Injet%C3%A1veis" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- 28. Cálculo de Medicamentos -->
+            <article class="curso-card" data-categoria="saude">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=600&q=80" alt="Curso de Cálculo de Medicamentos" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="curso-badge">Saúde</span>
+                    <h3>Cálculo de Medicamentos</h3>
+                    <p class="card-descricao">Domine o cálculo de medicamentos injetáveis com a Enfermeira Fernanda Neves. Material de apoio incluso e certificado reconhecido ao final.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Duração: 1 mês
+                        </span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presencial
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="contato.html?curso=C%C3%A1lculo%20de%20Medicamentos" class="btn-card-detalhes">Ver Detalhes</a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Mensagem exibida quando nenhum curso corresponde à pesquisa -->
+        <div id="sem-resultados" class="sem-resultados" style="display: none;">
+            <p>Nenhum curso encontrado para "<strong id="termo-buscado"></strong>".</p>
+            <button type="button" id="btn-limpar-busca" class="btn btn-outline">Mostrar Todos os Cursos</button>
+        </div>
+    </section>
+
+    <!-- Modal de Detalhes do Curso -->
+    <div id="modal-detalhes-curso" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-curso-titulo">
+        <div class="modal-detalhes-card">
+            <button type="button" id="btn-fechar-modal" class="modal-close-btn" aria-label="Fechar detalhes">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="modal-header-img">
+                <img id="modal-curso-img" src="" alt="">
+                <span id="modal-curso-badge" class="curso-badge">Categoria</span>
+            </div>
+
+            <div class="modal-body-content">
+                <h3 id="modal-curso-titulo">Nome do Curso</h3>
+                <p id="modal-curso-descricao" class="modal-descricao"></p>
+
+                <div class="modal-info-pills">
+                    <div class="info-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span><strong>Duração / Carga:</strong> <span id="modal-curso-carga">A definir</span></span>
+                    </div>
+                    <div class="info-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span><strong>Formato:</strong> 100% Presencial</span>
+                    </div>
+                    <div class="info-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span><strong>Certificado:</strong> Incluso e Reconhecido</span>
+                    </div>
+                </div>
+
+                <div class="modal-modulos-secao">
+                    <h4>Módulos e Conteúdo Programático</h4>
+                    <ul id="modal-curso-modulos" class="modal-lista-modulos">
+                        <!-- Preenchido via JavaScript -->
+                    </ul>
+                </div>
+
+                <div class="modal-footer-actions">
+                    <a id="modal-btn-matricula" href="contato.html" class="btn-card-detalhes">Quero Me Matricular Neste Curso</a>
+                    <button type="button" id="modal-btn-whats" class="btn-api btn-api-whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+                        </svg>
+                        Tirar Dúvidas no WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container footer-content">
+            <p class="footer-copy">&copy; 2026 <strong>TecnoCapacita Cursos</strong>. Todos os direitos reservados.</p>
+            <p class="footer-info">
+                <span><strong>CNPJ:</strong> 52.920.891/0001-06</span>
+                <span class="footer-sep">|</span>
+                <span><strong>CEP:</strong> 75681-773</span>
+                <span class="footer-sep">|</span>
+                <span>Universidade Cruzeiro do Sul - Polo Caldas Novas (Caldas Novas - GO)</span>
+                <span class="footer-sep">|</span>
+                <span><strong>Tel/WhatsApp:</strong> (64) 99255-0010</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="#" data-whatsapp-api class="whatsapp-float" aria-label="Atendimento rápido pelo WhatsApp" title="Fale conosco no WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

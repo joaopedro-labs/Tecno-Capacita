@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - TecnoCapacita Cursos</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-title">TecnoCapacita <span>Cursos</span></div>
+                <div class="logo-subtitle">Inovação em Aprendizagem</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contato.html" class="btn-header btn-fale">Fale Conosco</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner de Contato seguindo a mesma identidade visual do Catálogo -->
+    <section class="catalogo-hero contato-banner">
+        <!-- Grafismos Geométricos Sutis em Baixa Opacidade -->
+        <div class="catalogo-grafismos" aria-hidden="true">
+            <span class="geo-shape geo-circle-1"></span>
+            <span class="geo-shape geo-circle-2"></span>
+            <span class="geo-shape geo-diamond"></span>
+            <span class="geo-shape geo-grid"></span>
+        </div>
+
+        <div class="container catalogo-hero-content">
+            <h2 class="catalogo-title">Entre em Contato</h2>
+            <p class="catalogo-subtitulo">Ficou com alguma dúvida ou quer garantir sua matrícula? Preencha os dados abaixo e fale com nossa equipe pelos nossos canais oficiais.</p>
+        </div>
+    </section>
+
+    <!-- Área de Conteúdo sobre Fundo Cinza-Claro (Duas Colunas) -->
+    <section id="contato" class="contato-secao">
+        <div class="container">
+            <div class="contato-wrapper">
+                
+                <!-- Coluna Principal (Esquerda): Card Flutuante do Formulário de Contato -->
+                <form id="form-contato" class="contato-form" novalidate>
+                    <div class="contato-form-header">
+                        <h3>Envie sua Mensagem</h3>
+                        <p>Preencha os campos abaixo e escolha como deseja ser atendido.</p>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contato-nome">Nome Completo *</label>
+                            <input type="text" id="contato-nome" placeholder="Ex: Maria Silva" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contato-telefone">Telefone / WhatsApp *</label>
+                            <input type="tel" id="contato-telefone" placeholder="(64) 99999-9999" maxlength="15" inputmode="numeric" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contato-email">Seu E-mail *</label>
+                            <input type="email" id="contato-email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contato-curso">Curso de Interesse</label>
+                            <select id="contato-curso">
+                                <option value="Geral / Dúvidas">Quero orientação geral</option>
+                                <option value="Informática Básica e Avançada">Informática Básica e Avançada</option>
+                                <option value="Informática Básica">Informática Básica</option>
+                                <option value="Informática Kids">Informática Kids</option>
+                                <option value="Web Designer">Web Designer</option>
+                                <option value="Designer Gráfico">Designer Gráfico</option>
+                                <option value="Criação de Games">Criação de Games</option>
+                                <option value="Montagem e Manutenção de Computadores">Montagem e Manutenção de Computadores</option>
+                                <option value="Linguagem e Programação de Computadores">Linguagem e Programação de Computadores</option>
+                                <option value="AutoCAD">AutoCAD</option>
+                                <option value="Logística Empresarial">Logística Empresarial</option>
+                                <option value="Telemarketing">Telemarketing</option>
+                                <option value="Operador de Caixa">Operador de Caixa</option>
+                                <option value="Atendente de Ótica">Atendente de Ótica</option>
+                                <option value="Auxiliar de Consultório Odontológico">Auxiliar de Consultório Odontológico</option>
+                                <option value="Auxiliar de Farmácia">Auxiliar de Farmácia</option>
+                                <option value="Empreendedorismo">Empreendedorismo</option>
+                                <option value="Recepção Hoteleira">Recepção Hoteleira</option>
+                                <option value="Cuidador de Idosos">Cuidador de Idosos</option>
+                                <option value="Auxiliar Veterinário">Auxiliar Veterinário</option>
+                                <option value="Rotinas Administrativas">Rotinas Administrativas</option>
+                                <option value="Gestão Empresarial">Gestão Empresarial</option>
+                                <option value="Gestão do Agronegócio">Gestão do Agronegócio</option>
+                                <option value="Produção de Vídeos">Produção de Vídeos</option>
+                                <option value="Gestão de TI">Gestão de TI</option>
+                                <option value="Inglês Interativo">Inglês Interativo</option>
+                                <option value="Medicamentos Injetáveis">Medicamentos Injetáveis</option>
+                                <option value="Cálculo de Medicamentos">Cálculo de Medicamentos</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contato-mensagem">Mensagem *</label>
+                        <textarea id="contato-mensagem" rows="4" placeholder="Olá! Gostaria de saber mais sobre valores, horários e matrículas..." required></textarea>
+                    </div>
+
+                    <div id="contato-feedback" class="contato-feedback" role="status" aria-live="polite"></div>
+
+                    <!-- Botões de Ação com Cantos Arredondados -->
+                    <div class="contato-botoes-api">
+                        <button type="submit" id="btn-enviar-email" class="btn-api btn-api-email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 2L11 13"></path>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                            </svg>
+                            Enviar por E-mail
+                        </button>
+
+                        <button type="button" id="btn-enviar-whatsapp" class="btn-api btn-api-whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+                            </svg>
+                            Falar pelo WhatsApp
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Coluna Secundária (Direita): Card Flutuante de Atendimento Direto -->
+                <aside class="atendimento-direto-card" aria-label="Canais de Atendimento Direto">
+                    <h3>Atendimento Direto</h3>
+                    <p class="atendimento-desc">Prefere falar diretamente com nossa secretaria? Utilize um dos canais abaixo:</p>
+
+                    <ul class="atendimento-lista">
+                        <li>
+                            <div class="atendimento-icone">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+                                </svg>
+                            </div>
+                            <div class="atendimento-texto">
+                                <span class="atendimento-label">Telefone / WhatsApp</span>
+                                <a href="#" data-whatsapp-api class="atendimento-valor">(64) 99255-0010</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="atendimento-icone">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"></path>
+                                    <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path>
+                                </svg>
+                            </div>
+                            <div class="atendimento-texto">
+                                <span class="atendimento-label">E-mail Oficial</span>
+                                <a href="mailto:Tecnocapacitacursos@gmail.com" class="atendimento-valor">Tecnocapacitacursos@gmail.com</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Universidade+Cruzeiro+do+Sul+-+Polo+Caldas+Novas" target="_blank" rel="noopener noreferrer" class="atendimento-link-mapa" title="Abrir rota no Google Maps">
+                                <div class="atendimento-icone">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="atendimento-texto">
+                                    <span class="atendimento-label">Endereço Físico</span>
+                                    <span class="atendimento-valor">Universidade Cruzeiro do Sul - Polo Caldas Novas</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container footer-content">
+            <p class="footer-copy">&copy; 2026 <strong>TecnoCapacita Cursos</strong>. Todos os direitos reservados.</p>
+            <p class="footer-info">
+                <span><strong>CNPJ:</strong> 52.920.891/0001-06</span>
+                <span class="footer-sep">|</span>
+                <span><strong>CEP:</strong> 75681-773</span>
+                <span class="footer-sep">|</span>
+                <span>Universidade Cruzeiro do Sul - Polo Caldas Novas (Caldas Novas - GO)</span>
+                <span class="footer-sep">|</span>
+                <span><strong>Tel/WhatsApp:</strong> (64) 99255-0010</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="#" data-whatsapp-api class="whatsapp-float" aria-label="Atendimento rápido pelo WhatsApp" title="Fale conosco no WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
